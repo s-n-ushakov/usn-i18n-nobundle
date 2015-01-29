@@ -1,0 +1,32 @@
+2015-01-29 - project re-arranged to be placed in individual repository at GitHub
+2015-01-26 - project re-arranged as a 'java' repository branch at GitHub
+2015-01-20 - project mavenized
+           - project arranged for hosting at GitHub
+           - dependency versions updated
+           - Ant build adjusted to allow targeting Java 1.7 from under 1.8
+           - offline javadocs build implemented for Ant
+           - handling of throwables in I15dLogger fixed and made more flexible,
+             similar to SLF4J 1.6.0+
+           - more I18Item subclasses handled by I15dLogger
+           - bug in I18nHandler#findBestLocaleTag() fixed
+           - javadoc comments cleaned up
+2013-06-18 - demo code fixed in 'package-info.java'
+2013-06-17 - first public release with message arguments handling
+           - the method for matching locales and languages against I18nItem data
+             refactored
+           - Ant build file targets restructured
+           - javadoc comments for the package updated
+2013-05-26 - some methods' visibility changed
+           - method I18Item#obtainBestLocaleTag(String[]) renamed to
+             getBestLocaleTag
+           - public method I18Item#getBestLanguage(String[]) added
+           - Ant build file refined
+2013-05-20 - refactored to deal with locales rather than languages, with
+             compiled MessageFormat option removed
+           - I18nItem refactored to have messages map as a member rather than
+             a superclass
+           - methods taking a Throwable added to I15dLogger
+           - 'util' segment removed from exported file names
+           - 'changelog.txt' added to the distribution
+2013-05-14 - first release with message arguments handling
+2013-02-18 - initial public release as concept with I18nItem as all-in-one
